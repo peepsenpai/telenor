@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telenor</title>
+
+    <!-- icons  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- js bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-us">
+        <p>chad mad osso!</p>
+        <i class="far fa-comments"></i>
+    </div>
+    <div class="header1" id="header1">
+        <div class="nav-container">
+            <div class="left-nav">
+                <ul class="left-nav-ul">
+                    <li class="left-nav-li">
+                        <a href="#" class="p-3">Privat</a>
+                    </li>
+                    <li class="left-nav-li active">
+                        <a href="#" class="p-3">Bedrift</a>
+                    </li>
+                    <li class="left-nav-li searchBar">
+                        <div class="search">
+                            <div class="searchIcon"><i class="fas fa-search"></i></div>
+                            <div class="input">
+                                <input type="text" placeholder="Sok" id="SesrchInput">
+                            </div>
+                            <span class="cross"> <i class="fas fa-times"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle-nav">
+                <a href="#" class="middle-logo">
+                    <img src="img/telenorlogo.svg" width="">
+                </a>
+            </div>
+            <div class="right-nav">
+                <div class="logIn toggleBtn" id="logIn">
+                    <a href="#" class="logIn-heading" id="logIn-heading">
+                        <h3>Logg inn
+                            <span class="hide-span"><i class="fas fa-times"></i></span>
+                            <span class="logIn-span">
+                                <i class="far fa-user"></i>
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+                <div class="menu toggleBtn" id="menu">
+                    <a href="#" class="menu-heading" id="menu-heading">
+                        <h3> Meny <span class="menu-span"> <i class="fas fa-bars"></i></span><span class="hide-span"><i
+                                    class="fas fa-times"></i></span></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-items" id="login-items">
+        <div class="logIn-container toggleItem" id="logIn-container">
+            <div class="logIn-left login-content">
+                <ul>
+                    <li>
+                        <a href="#" class="left-para">Mobilit Bedriftsnett - ny losing <i
+                                class="fas fa-angle-right"></i></a><span class="hide-icon"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="left-para">Min Bedrift - for administrator <i
+                                class="fas fa-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="left-para">Nettbutikken - se dine priser <i
+                                class="fas fa-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="left-para">Mine sider - for den ansatte <i
+                                class="fas fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logIn-middle login-content">
+                <a href="#" class="logIn-middle-heading" id="logIn-middle-heading">
+                    <h4>Mobilt Bedriftsnett (gammel løsning)</h4><span class="hide-icon"><i
+                            class="fas fa-plus-circle"></i></span>
+                </a>
+                <div class="logIn-middle-items">
+                    <ul class="hideUl">
+                        <li><a href="#"> Køkonsoll</a></li>
+                        <li><a href="#">Mobilt Sentralbord</a></li>
+                        <li><a href="#"> Mobilt Sentralbord Avansert</a></li>
+                        <li><a href="#"> For uregistrerte/upersonlige</a></li>
+                        <li><a href="#"> brukere</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logIn-right login-content">
+                <a href="#" class="logIn-right-heading" id="logIn-right-heading">
+                    <h4>mPort</h4><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                </a>
+                <div class="logIn-right-items">
+                    <ul class="hideUl">
+                        <li><a href="#"> Ansatte/sluttbrukere</a></li>
+                        <li><a href="#">Administrator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-items mt-4 pt-4" id="menu-items">
+        <div class="hide-ul">
+            <div class="left-nav-li">
+                <a href="#" class="p-3">Privat</a>
+            </div>
+            <div class="left-nav-li active">
+                <a href="#" class="p-3">Bedrift</a>
+            </div>
+        </div>
+        <div class="menu-container toggoleItem" id="menu-container">
+            <div class="menu-box">
+                <div class="menu-content">
+                    <a href="#" class="drop-box">
+                        <h3>Mobil</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                    </a>
+                    <div class="d-content">
+                        <div class="drop-items">
+                            <a href="#" class="drop-item">Mobilabonnement</a>
+                            <a href="#" class="drop-item"> Kjøp mobil</a>
+                            <a href="#" class="drop-item">SWAP Bedrift</a>
+                            <a href="#" class="drop-item"> Betal Selv</a>
+                            <a href="#" class="drop-item">Utenlandspriser</a>
+                            <a href="#" class="drop-item">Dekning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <a href="#" class="drop-box">
+                        <h3>Nettverk</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                    </a>
+                    <div class="d-content">
+                        <div class="drop-items">
+                            <a href="#">Drift & support</a>
+                            <a href="#">Konsulenter</a>
+                            <a href="#">Sikkerhet</a>
+                            <a href="#"> Lokalnett (LAN)</a>
+                            <a href="#">Datanettverk (WAN)</a>
+                            <a href="#">Wi-Fi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-content">
+                    <a href="#" class="drop-box">
+                        <h3>Kommunikasjon</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                    </a>
+                    <div class="d-content">
+                        <div class="drop-items">
+                            <a href="#">Fiber</a>
+                            <a href="#">Trådløst Bredbånd</a>
+                            <a href="#">Teams</a>
+                            <a href="#">Mobilt Bredbånd</a>
+                            <a href="#">Telefoni</a>
+                            <a href="#">Mobilt Bedriftsnett</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="menu-content">
+                    <a href="#" class="drop-box">
+                        <h3>Digitalisering</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                    </a>
+                    <div class="d-content">
+                        <div class="drop-items">
+                            <a href="#">internet of Things</a>
+                            <a href="#">Bransjer</a>
+                            <a href="#">Videomøter</a>
+                            <a href="#">Nystartet</a>
+                            <a href="#">Hjemmekontor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-content">
+                    <a href="#" class="drop-box">
+                        <h3>Verktøy</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                    </a>
+                    <div class="d-content">
+                        <div class="drop-items">
+                            <a href="#">Min Bedrift</a>
+                            <a href="#">Mitt Telenor</a>
+                            <a href="#">Mitt Serviceteam</a>
+                            <a href="#">Enterprise nettbutikk</a>
+                            <a href="#">Tjenesteportalen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-content">
+                    <div class="drop-items">
+                        <a href="#" class="drop-box">
+                            <h3>Bli kunde</h3><span class="hide-icon"></span>
+                        </a>
+                        <a href="#" class="drop-box">
+                            <h3>Kundeservice</h3>
+                        </a>
+                        <a href="#" class="drop-box">
+                            <h3>Faktura</h3>
+                        </a>
+                        <a href="#" class="drop-box">
+                            <h3>Aktuelt</h3>
+                        </a>
+                        <a href="#" class="drop-box">
+                            <h3>Blogg</h3>
+                        </a>
+                        <a href="#" class="drop-box">
+                            <h3>Webinar</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="header2" id="header2">
+        <div class="header2-navbar" id="header2-navbar">
+            <ul class="header2-ul">
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Kjøp mobil</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Mobilabonnement</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Fiber og bredbånd</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Min Bedrift</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Kundeservice</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Bransjer</a>
+                </li>
+                <li class="header2-li">
+                    <a href="#" class="header2-items">Nystartet</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- long banner  -->
+    <section class="banner">
+        <picture>
+            <source media="(min-width: 1000px)"
+                srcset="img/iphone13-Avail-2370x600px%20(1)_4c581062-6485-4fa3-a856-783fe298afd7.webp">
+            <img src="img/iphone13-avail-750x1000px.webp">
+        </picture>
+    </section>
+
+    <!-- banner  -->
+    <section class="banner2 short-banner mt-4 pt-4">
+        <div class="s-b-content">
+            <div class="container-fluid">
+                <div class="banner2-content row">
+                    <div class="col-md-12 col-lg-6 col-sm-12 banner2-image p-0">
+                        <div class="b-img">
+                            <img src="img/front-MK.webp" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="right-banner2 para col-md-12 col-lg-6 col-sm-12 p-0">
+                        <p class="large-heading">
+                            Ubegrenset data på Norges beste mobilnett
+                        </p>
+                        <p class="small-heading">Mobilabonnementet Frihet gir deg ubegrenset bruk av data. Velg
+                            hastigheten
+                            selv.</p>
+                        <button class="btn banner2-btn">
+                            <a href="#">Les mer og bestill</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog  -->
+    <section class="blog mt-5 pt-5">
+        <div class="blog-container blog-content">
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/Sandvika-376x230.webp">
+                    <p>Trådløst Bredbånd</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Nyhet - lynraskt internett levert hng 5G-n</a></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/iot-week.webp">
+                    <p>IoT</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Trender, sikkerhet og innovasjon - velkom</a></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/img2.webp">
+                    <p>Trådløst Bredbånd</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Nyhet -internett levert over 5G-nettet</a>
+                            <h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- product  -->
+    <section class="product" id="product">
+        <div class="product-upper-box mt-5 pt-5">
+            <nav class="product-nav">
+                <p>Nyheter <span><a href="#"> Se hele utvalget</a> <i class="fas fa-angle-right"></i></span></p>
+                <ul>
+                    <li><span><i class="fas fa-truck"></i> Rask levering </span></li>
+                    <li><span><i class="fas fa-headset"></i> 24/7 Kundeservice</span></li>
+                    <li><span><i class="fas fa-lock"></i>Trygg handel</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="product-content">
+            <div class="product-list">
+                <div class="items-p">
+                    <div class="products">
+                        <a href="#">
+                            <div class="product-image f-img">
+                                <img src="img/iphone pro.webp">
+                            </div>
+                            <h3>iPhone 12 Pro Max</h3>
+                            <h4>Fra 524,- mnd m/SWAP Bedrift</h4>
+                        </a>
+                    </div>
+                    <div class="products">
+                        <a href="#">
+                            <div class="product-image f-img">
+                                <img src="img/iphone mini.webp">
+                            </div>
+                            <h3>iPhone 12 mini</h3>
+                            <h4>Fra 524,- mnd m/SWAP Bedrift</h4>
+                        </a>
+                    </div>
+                    <div class="products">
+                        <a href="#" class="p-box">
+                            <div class="product-image p-img">
+                                <img src="img/iphone pro.webp" class="img2">
+                            </div>
+                            <h3>Samsung Galaxy S21 Ultra 5G</h3>
+                            <h4>Fra 524,- mnd m/SWAP Bedrift</h4>
+                        </a>
+                    </div>
+                    <div class="products">
+                        <a href="#" class="p-box">
+                            <div class="product-image p-img">
+                                <img src="img/iphone mini.webp" class="img2">
+                            </div>
+                            <h3>Samsung Galaxy S21 5G</h3>
+                            <h4>Fra 524,- mnd m/SWAP Bedrift</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner short  -->
+    <section class="banner2 short-banner mt-4 pt-4">
+        <div class="s-b-content">
+            <div class="container-fluid">
+                <div class="banner2-content row">
+                    <div class="right-banner2 para col-md-12 col-lg-6 col-sm-12 p-0">
+                        <p class="large-heading">
+                            Ubegrenset data på Norges beste mobilnett
+                        </p>
+                        <p class="small-heading">Mobilabonnementet Frihet gir deg ubegrenset bruk av data. Velg
+                            hastigheten
+                            selv.</p>
+                        <button class="btn banner2-btn">
+                            <a href="#">Les mer og bestill</a>
+                        </button>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-sm-12 banner2-image p-0">
+                        <div class="b-img">
+                            <img src="img/abonnement1.webp" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog  -->
+    <section class="blog mt-5 pt-5">
+        <div class="blog-container blog-content">
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/Zaptec-376x260.webp">
+                    <p>Trådløst Bredbånd</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Nyhet - lynraskt internett levert hng 5G-n</a></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/Blogg fragattack 376x260.webp">
+                    <p>IoT</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Trender, sikkerhet og innovasjon - velkom</a></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <img src="img/5G_376x260.webp">
+                    <p>Trådløst Bredbånd</p>
+                    <div class="blog-heading">
+                        <h3><a href="#">Nyhet -internett levert over 5G-nettet</a>
+                            <h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner  -->
+    <section class="banner2 short-banner mt-4 pt-4">
+        <div class="s-b-content">
+            <div class="container-fluid">
+                <div class="banner2-content row">
+                    <div class="col-md-12 col-lg-6 col-sm-12 banner2-image p-0">
+                        <div class="b-img">
+                            <img src="img/email.webp" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="right-banner2 para col-md-12 col-lg-6 col-sm-12 p-0">
+                        <p class="large-heading">
+                            Ubegrenset data på Norges beste mobilnett
+                        </p>
+                        <p class="small-heading">Mobilabonnementet Frihet gir deg ubegrenset bruk av data. Velg
+                            hastigheten
+                            selv.</p>
+                        <button class="btn banner2-btn">
+                            <a href="#">Les mer og bestill</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog mt-5 pt-5">
+        <div class="blog-container blog-content blog-3">
+            <div class="blog-item">
+                <a href="#">
+                    <div class="blog-box">
+                        <div class="b-img">
+                            <img src="img/Bohus Nettverk_376x260.webp">
+                        </div>
+                        <div class="blog-heading">
+                            <p>Trådløst Bredbånd</p>
+                            <h3><a href="#">Nyhet - lynraskt internett levert hng 5G-n</a></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <div class="blog-box">
+                        <b class="b-img">
+                            <img src="img/Kom i gang med IoT_376x260.webp">
+                        </b>
+                        <div class="blog-heading">
+                            <p>IoT</p>
+                            <h3><a href="#">Trender, sikkerhet og innovasjon - velkom</a></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-item">
+                <a href="#">
+                    <div class="blog-box">
+                        <div class="b-img">
+                            <img src="img/Innsiktsrapport_376x260.webp">
+                        </div>
+                        <div class="blog-heading">
+                            <p>Trådløst Bredbånd</p>
+                            <h3><a href="#">Nyhet -internett levert over 5G-nettet</a>
+                                <h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- bouble-banner  -->
+    <section class="double-banner mt-4 pt-4">
+        <div class="double-banner-content">
+            <div class="main-box container-fluid">
+                <div class="double-banner-items row">
+                    <div class="double-banner-left col-lg-6 col-md-6 col-sm-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="double-banner-image col-lg-12 col-md-12 col-sm-6">
+                                    <img src="img/Svindel 580x306.webp" class="img-fluid">
+                                </div>
+                                <div class="double-banner-para col-lg-12 col-md-12 col-sm-6">
+                                    <h4>Datasikkerhet</h4>
+                                    <p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="double-banner-right col-lg-6 col-md-6 col-sm-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="double-banner-image col-lg-12 col-md-12 col-sm-6">
+                                    <img src="img/banner2.webp" class="img-fluid">
+                                </div>
+                                <div class="double-banner-para col-lg-12 col-md-12 col-sm-6">
+                                    <h4>Trådløst Bredbånd</h4>
+                                    <p><a href="#">Se videoen og lær mer om lynraskt Trådløst Bredbånd</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="double-banner mt-4 pt-4">
+        <div class="double-banner-content">
+            <div class="main-box container">
+                <div class="double-banner-items row">
+                    <div class="double-banner-left col-lg-6 col-md-6 col-sm-12">
+                        <div class="double-banner-image">
+                            <img src="img/Svindel 580x306.webp" class="img-fluid">
+                        </div>
+                        <div class="double-banner-para">
+                            <h4>Datasikkerhet</h4>
+                            <p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+                        </div>
+                    </div>
+                    <div class="double-banner-right col-lg-6 col-md-6 col-sm-12">
+                        <div class="double-banner-image">
+                            <img src="img/banner2.webp" class="img-fluid">
+                        </div>
+                        <div class="double-banner-para">
+                            <h4>Trådløst Bredbånd</h4>
+                            <p><a href="#">Se videoen og lær mer om lynraskt Trådløst Bredbånd</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="features mt-4 pt-3">
+        <div class="features-heading">
+            <p>Apper som forenkler hverdagen:</p>
+        </div>
+        <div class="features-items">
+            <div class="single-item">
+                <div class="feature-item-logo">
+                    <img src="img/telenorlogo.svg" alt="logo" width="64" height="64">
+                </div>
+                <div class="feature-para">
+                    <a href="#">
+                        <h2 class="feature-para-heading">
+                            Mitt Telenor
+                        </h2>
+                        <p>I appen Mitt Telenor har du full oversikt over dine abonnement og ditt mobilforbruk.</p>
+                        <button class="less-mar">
+                            les Mer <span><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="feature-item-logo">
+                    <img src="img/minbedrift2appicons_tcm95-376198.webp" alt="logo" width="74" height="74">
+                </div>
+                <div class="feature-para">
+                    <a href="#">
+                        <h2 class="feature-para-heading">
+                            Min Bedrift
+                        </h2>
+                        <p>I appen Mitt Telenor har du full oversikt over dine abonnement og ditt mobilforbruk.</p>
+                        <button class="less-mar">
+                            les Mer <span><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="feature-item-logo">
+                    <img src="img/mbnappicons_tcm95-376196.webp" alt="logo" width="74" height="74">
+                </div>
+                <div class="feature-para">
+                    <a href="#">
+                        <h2 class="feature-para-heading">
+                            Moblift Bedriftsnett
+                        </h2>
+                        <p>I appen Mitt Telenor har du full oversikt over dine abonnement og ditt mobilforbruk.</p>
+                        <button class="less-mar">
+                            les Mer <span><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="feature-item-logo">
+                    <img src="img/minskyappicons_tcm95-376197.webp" alt="logo" width="74" height="74">
+                </div>
+                <div class="feature-para">
+                    <a href="#">
+                        <h2 class="feature-para-heading">
+                            Min Sky
+                        </h2>
+                        <p>I appen Mitt Telenor har du full oversikt over dine abonnement og ditt mobilforbruk.</p>
+                        <button class="less-mar">
+                            les Mer <span><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-box">
+            <div class="logo">
+                <img src="img/telenorlogo.svg" alt="logo" width="64" height="64">
+            </div>
+            <div class="footer-up-items">
+                <div class="footer-up-box">
+                    <div class="footer-up-content">
+                        <a href="#footer">
+                            <h3>Bedriftskunde</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                        </a>
+                        <ul class="footerUl">
+                            <li><a href="#">Kundeservice</a></li>
+                            <li><a href="#">Finn din telenorkontakt</a></li>
+                            <li><a href="#">Finn forhandler</a></li>
+                            <li><a href="#">Vilkår</a></li>
+                            <li><a href="#">Dekningskart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-up-box">
+                    <div class="footer-up-content">
+                        <a href="#footer">
+                            <h3>Om Telenor</h3><span class="hide-icon"><i class="fas fa-plus-circle"></i></span>
+                        </a>
+                        <ul class="footerUl">
+                            <li><a href="#">Fakturere Telenor</a></li>
+                            <li><a href="#">Samfunn og myndigheter</a></li>
+                            <li><a href="#">Digital Sikkerhet</a></li>
+                            <li><a href="#">Telenors Kulturarv</a></li>
+                            <li><a href="#">Open Mind</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-up-box">
+                    <div class="footer-up-content footer-up">
+                        <ul class="footerUl">
+                            <li><a href="#">Pressesenter</a><span class="hide-icon"></span></li>
+                            <li><a href="#">Samfunnsansvar</a></li>
+                            <li><a href="#">Personvern og Informasjonskapsler</a></li>
+                            <li><a href="#">Telenors Kulturarv</a></li>
+                            <li><a href="#">Jobb i Telenor</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down">
+                <div class="footer-down-item">
+                    <div class="heading">
+                        <p>telenor</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                </div>
+                <div class="footer-down-item2">
+                    <span><img src="img/telefonkiosk.svg" alt="icon" height="30px"> &copy; 1855-2021 Telenor ASA </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer>
+        const heading = document.getElementById('logIn-heading')
+        heading.addEventListener('click', () => {
+            let items = document.getElementById('login-items');
+            if (items.classList.contains("show-text")) {
+                items.classList.remove("show-text");
+                heading.classList.remove('show-text')
+            }
+            else {
+                items.classList.add("show-text")
+                heading.classList.add('show-text')
+            }
+        })
+
+        const menuHeading = document.getElementById('menu-heading');
+        menuHeading.addEventListener('click', () => {
+            let menuItems = document.getElementById('menu-items');
+            if (menuItems.classList.contains('active')) {
+                menuItems.classList.remove('active')
+                menuHeading.classList.remove('active')
+            }
+            else {
+                menuItems.classList.add('active')
+                menuHeading.classList.add('active')
+            }
+        })
+
+
+        // search icon 
+        const icon = document.querySelector('.searchIcon'),
+            search = document.querySelector('.search'),
+            cross = document.querySelector('.cross');
+        icon.addEventListener('click', function () {
+            search.classList.add('active');
+            menuHeading.classList.add('hide')
+            heading.classList.add('hide')
+        })
+        cross.addEventListener('click', function () {
+            search.classList.remove('active')
+            menuHeading.classList.remove('hide')
+            heading.classList.remove('hide')
+        })
+
+
+
+        const dropItem = document.querySelectorAll('.menu-content');
+        dropItem.forEach((dItem) => {
+            let hideIcon = dItem.querySelector('.hide-icon');
+            hideIcon.addEventListener('click', () => {
+                dropItem.forEach((dItem2) => {
+                    if (dItem !== dItem2) {
+                        dItem2.classList.remove('showMenu')
+                    }
+                })
+
+                if (dItem.classList.contains('showMenu')) {
+                    dItem.classList.remove('showMenu')
+                }
+                else {
+                    dItem.classList.add('showMenu')
+                }
+            })
+        })
+
+
+        const login = document.querySelectorAll('.login-content');
+        login.forEach((lItem) => {
+            let hideIcon = lItem.querySelector('.hide-icon');
+            hideIcon.addEventListener('click', () => {
+                login.forEach((lItem2) => {
+                    if (lItem !== lItem2) {
+                        lItem2.classList.remove('showLogin');
+                    }
+                })
+                if (lItem.classList.contains('showLogin')) {
+                    lItem.classList.remove('showLogin')
+                }
+                else {
+                    lItem.classList.add('showLogin')
+                }
+            })
+
+        })
+
+        const footer = document.querySelectorAll('.footer-up-content');
+        footer.forEach((fItem) => {
+            let hideIcon = fItem.querySelector('.hide-icon');
+            hideIcon.addEventListener('click', () => {
+                footer.forEach((fItem2) => {
+                    if (fItem !== fItem2) {
+                        fItem2.classList.remove('showFooter');
+                    }
+                })
+                if (fItem.classList.contains('showFooter')) {
+                    fItem.classList.remove('showFooter')
+                }
+                else {
+                    fItem.classList.add('showFooter')
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>
